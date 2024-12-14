@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="taskmanager" />
+        <module name="submission" />
+        <module name="taskservice" />
+        <module name="eureka-server" />
+        <module name="gateway-setup" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-server" target="17" />
+      <module name="gateway-setup" target="17" />
+      <module name="submission" target="17" />
+      <module name="taskmanager" target="17" />
+      <module name="taskservice" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-server" options="-parameters" />
+      <module name="gateway-setup" options="-parameters" />
+      <module name="submission" options="-parameters" />
+      <module name="taskmanager" options="-parameters" />
+      <module name="taskservice" options="-parameters" />
+    </option>
+  </component>
+</project>
